@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_scan">
+
+    <fragment
+        android:id="@+id/navigation_scan"
+        android:name="com.example.android.semg_30.ui.scan.ScanFragment"
+        android:label="@string/title_scan"
+        tools:layout="@layout/fragment_scan" >
+        <action
+            android:id="@+id/action_navigation_scan_to_navigation_select_device"
+            app:destination="@id/navigation_select_device" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_select_device"
+        android:name="com.example.android.semg_30.ui.select_characteristic.SelectCharacteristicFragment"
+        android:label="@string/title_select_device"
+        tools:layout="@layout/fragment_select_characteristic" >
+        <action
+            android:id="@+id/action_navigation_select_device_to_navigation_measure"
+            app:destination="@id/navigation_measure" />
+        <argument
+            android:name="device_name"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="device_address"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_measure"
+        android:name="com.example.android.semg_30.ui.measure.MeasureFragment"
+        android:label="@string/title_measure"
+        tools:layout="@layout/fragment_measure" >
+        <action
+            android:id="@+id/action_navigation_measure_to_navigation_postprocess"
+            app:destination="@id/navigation_postprocess" />
+        <argument
+            android:name="device_name"
+            android:defaultValue="Unknown Device"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="device_address"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="Unknown Address" />
+        <argument
+            android:name="characteristic"
+            app:argType="android.bluetooth.BluetoothGattCharacteristic"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_postprocess"
+        android:name="com.example.android.semg_30.ui.postprocess.PostprocessFragment"
+        android:label="@string/title_postprocess"
+        tools:layout="@layout/fragment_postprocess" >
+        <argument
+            android:name="fileName"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="default" />
+    </fragment>
+
+</navigation>

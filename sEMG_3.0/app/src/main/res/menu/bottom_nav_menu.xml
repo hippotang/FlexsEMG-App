@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_scan"
+        android:icon="@drawable/no_hope_wireless_access_point"
+        android:title="@string/title_scan" />
+
+    <item
+        android:id="@+id/navigation_select_device"
+        android:icon="@drawable/smartphone_openslipart_ciubotaru"
+        android:title="@string/title_select_device" />
+
+    <item
+        android:id="@+id/navigation_measure"
+        android:icon="@drawable/bicep"
+        android:title="@string/title_measure" />
+
+    <item
+        android:id="@+id/navigation_postprocess"
+        android:icon="@drawable/line_chart_662"
+        android:title="@string/title_postprocess" />
+
+</menu>

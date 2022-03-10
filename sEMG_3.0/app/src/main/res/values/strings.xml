@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">sEMG_3.0</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_scan">Scan</string>
+    <string name="title_measure">Measure</string>
+    <string name="title_postprocess">Postprocess</string>
+    <string name="title_select_device">Select Device</string>
+
+    <string name="start_scan">Start Scan</string>
+    <string name="stop_scan">Stop Scan</string>
+    <string name="empty_device_list_message">Empty List: Scan to discover BLE devices</string>
+
+    <string name="unknown_device">Unknown Device</string>
+    <string name="unknown_characteristic">Unknown Characteristic</string>
+    <string name="unknown_address">Unknown Address</string>
+
+    <string name="title_select_characteristic">Select Characteristic</string>
+    <string name="no_device_selected">No device selected</string>
+    <string name="most_recent_data">null</string>
+
+    <string name="ble_not_supported">BLE is not supported</string>
+    <string name="label_data">Data:</string>
+    <string name="label_device_address">Device address:</string>
+    <string name="label_state">State:</string>
+    <string name="no_data">No data</string>
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="title_devices">BLE Device Scan</string>
+    <string name="error_bluetooth_not_supported">Bluetooth not supported.</string>
+    <string name="enable_ble_pls">Enable BLE for this app to work</string>
+    <string name="title_list_of_characteristics">List of characteristics</string>
+    <string name="connect">Measure with this characteristic</string>
+
+    <string name="sample_time_hint"> ex. 10, 60 </string>
+    <string name="share_test_file">share test file</string>
+    <string name="generate_file">generate file</string>
+    <string name="measure_fragment_stopwatch">00m 00s</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

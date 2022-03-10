@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:tag="GRAPHDISPLAYFRAGMENT"
+    tools:context=".ui.graph_display.GraphDisplayFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!--    Graphs for each channel   -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonSelectChannels"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center"
+                android:text="select visible channels"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graph00"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip"
+                    android:title="Channel 1"
+                    app:seriesColor="@color/color_channel1"
+                    app:seriesData="0=0"
+                    app:seriesTitle="Channel 1"
+                    app:seriesType="line" />
+
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graph01"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip"
+                    android:title="Channel 2"
+                    app:seriesColor="@color/color_channel2"
+                    app:seriesData="0=0"
+                    app:seriesTitle="Channel 2"
+                    app:seriesType="line" />
+
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graph02"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dip"
+                    android:title="Channel 3"
+                    app:seriesColor="@color/color_channel3"
+                    app:seriesData="0=0"
+                    app:seriesTitle="Channel 3"
+                    app:seriesType="line" />
+
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graph03"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:title="Channel 4"
+                    app:seriesColor="@color/color_channel4"
+                    app:seriesData="0=0"
+                    app:seriesTitle="Channel 4"
+                    app:seriesType="line" />
+
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graph04"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:title="Channel 5"
+                    app:seriesColor="@color/color_channel5"
+                    app:seriesData="0=0"
+                    app:seriesTitle="Channel 5"
+                    app:seriesType="line" />
+
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graph05"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:title="Channel 6"
+                    app:seriesColor="@color/color_channel6"
+                    app:seriesData="0=0"
+                    app:seriesTitle="Channel 6"
+                    app:seriesType="line" />
+
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graph06"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:title="Channel 7"
+                    app:seriesColor="@color/color_channel7"
+                    app:seriesData="0=0"
+                    app:seriesTitle="Channel 7"
+                    app:seriesType="line" />
+
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graph07"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:title="Channel 8"
+                    app:seriesColor="@color/color_channel8"
+                    app:seriesData="0=0"
+                    app:seriesTitle="Channel 8"
+                    app:seriesType="line" />
+
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graph08"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:title="Channel 9"
+                    app:seriesColor="@color/color_channel9"
+                    app:seriesData="0=0"
+                    app:seriesTitle="Channel 9"
+                    app:seriesType="line" />
+
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graph09"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:title="Channel 10"
+                    app:seriesColor="@color/color_channel10"
+                    app:seriesData="0=0"
+                    app:seriesTitle="Channel 10"
+                    app:seriesType="line" />
+
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graph10"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:title="Channel 11"
+                    app:seriesColor="@color/color_channel11"
+                    app:seriesData="0=0"
+                    app:seriesTitle="Channel 11"
+                    app:seriesType="line" />
+
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graph11"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:title="Channel 12"
+                    app:seriesColor="@color/color_channel12"
+                    app:seriesData="0=0"
+                    app:seriesTitle="Channel 12"
+                    app:seriesType="line" />
+
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graph12"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:title="Channel 13"
+                    app:seriesColor="@color/color_channel13"
+                    app:seriesData="0=0"
+                    app:seriesTitle="Channel 13"
+                    app:seriesType="line" />
+
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graph13"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:title="Channel 14"
+                    app:seriesColor="@color/color_channel14"
+                    app:seriesData="0=0"
+                    app:seriesTitle="Channel 14"
+                    app:seriesType="line" />
+
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graph14"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:title="Channel 15"
+                    app:seriesColor="@color/color_channel15"
+                    app:seriesData="0=0"
+                    app:seriesTitle="Channel 15"
+                    app:seriesType="line" />
+
+                <com.jjoe64.graphview.helper.GraphViewXML
+                    android:id="@+id/graph15"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dip"
+                    android:title="Channel 16"
+                    app:seriesColor="@color/color_channel16"
+                    app:seriesData="0=0"
+                    app:seriesTitle="Channel 16"
+                    app:seriesType="line" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</FrameLayout>
